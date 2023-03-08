@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>lesson-2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <caption class="name">Основные теги html</caption>
+        <thead>
+            <tr>
+                <th colspan="3" class="title">1) Структура Web-страницы</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tags1 align1">&lthtml&gt&lt/html&gt</td>
+                <td class="align2">Начало и конец страницы</td>
+                <td class="align3"></td>
+            </tr>
+            <tr>
+                <td class="tags1">&lthead&gt&lt/head&gt</td>
+                <td>Описание страницы,содержащее различную информацию не отображаемую в теле документа.Здесь
+                    распологается тег имени страницы и теги для поисковых машин.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tags1">&lttitle&gt&lt/title&gt</td>
+                <td>Имя страницы</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tags1">&ltbody&gt&lt/body&gt</td>
+                <td>Определяет видимую часть страницы</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td></td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr>
+                <th colspan="2" class="title">2) Aтрибуты тела документа</th>
+                <th>Значение атрибутов</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tags">&ltbody <i>background</i>="URL"&gt</td>
+                <td>Фоновое изображение</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tags">&ltbody <i>bgcolor</i>="#RRGGBB"&gt</td>
+                <td>Цвет фона документа, используя значения цвета в виде RRGGBB</td>
+                <td rowspan="5">red,blue,#FF0000 и др.</td>
+            </tr>
+            <tr>
+                <td class="tags">&ltbody <i>text</i>="#RRGGBB"&gt</td>
+                <td>Цвет текста документа, используя значения цвета в виде RRGGBB</td>
+            </tr>
+            <tr>
+                <td class="tags">&ltbody <i>link</i>="#RRGGBB"&gt</td>
+                <td>Устанавливает цвет гиперсылок, используя значения цвета в виде RRGGBB</td>
+            </tr>
+            <tr>
+                <td class="tags">&ltbody <i>vlink</i>="#RRGGBB"&gt</td>
+                <td>Устанавливает цвет гиперсылок на которых вы уже побывали, используя значения цвета в виде RRGGBB
+                </td>
+            </tr>
+            <tr>
+                <td class="tags">&ltbody <i>alink</i>="#RRGGBB"&gt</td>
+                <td>Устанавливает цвет гиперсылок при нажатии</td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td></td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr>
+                <th colspan="2" class="title">3) Теги для форматирования текста</th>
+                <th>Значение атрибутов</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tags">&lth?&gt&lt/h?&gt</td>
+                <td>Создает заголовок (уровни от 1 до 6)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tags">&lth? align="*"&gt&lt/h?&gt</td>
+                <td>Загаловок с выравниванием</td>
+                <td>left, right, center</td>
+            </tr>
+            <tr>
+                <td class="tags">&ltp&gt&lt/p&gt</td>
+                <td>Создает новый параграф</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tags">&ltp align="*"&gt&lt/p&gt</td>
+                <td>Выравнивает параграф относительно одной из сторон документа</td>
+                <td>left, right, center, justify</td>
+            </tr>
+            <tr>
+                <td class="tags">&ltbr&gt</td>
+                <td>Вставляет перевод строки</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tags">&ltcenter&gt&lt/center&gt</td>
+                <td>Выравнивание по центру</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tags">&ltdiv align="*"&gt</td>
+                <td>Форматирование больших блоков текста страницы, также используется в таблицах стилей</td>
+                <td>left, right, center, justify</td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td></td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr>
+                <th colspan="2" class="title">4) Теги для форматирофания шрифта</th>
+                <th>Значение атрибутов</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tags">&ltb&gt&lt/b&gt</td>
+                <td><b>Жирный</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tags">&lti&gt&lt/i&gt</td>
+                <td><i>Курсив</i></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tags">&ltu&gt&lt/u&gt</td>
+                <td><u>Подчеркнутый</u></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tags">&ltsup&gt&lt/sup&gt</td>
+                <td>Верхний индекс - пример: a<sup>2</sup></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tags">&ltsub&gt&lt/sub&gt</td>
+                <td>Нижний индекс - пример: a<sub>2</sub></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tags">&ltfont size=?&gt&lt/font&gt</td>
+                <td>Размер шрифта в пределах от 1 до 7</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
