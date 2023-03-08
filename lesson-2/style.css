@@ -1,0 +1,50 @@
+table {
+    border: 1px solid;
+    margin: auto;
+    width: 50%;
+    border-color: black;
+}
+
+th {
+    border: 1px solid;
+    background-color: #e3e3fd;
+    border-color: black;
+    color: brown;
+    font-style: italic;
+}
+
+td {
+    border: 1px solid;
+}
+
+.name {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.align1 {
+    width: 35%;
+}
+
+.align2 {
+    width: 55%;
+}
+
+.align3 {
+    width: 10%;
+}
+
+.tags {
+    color: brown;
+    border-color: black;
+}
+
+.tags1 {
+    color: brown;
+    border-color: black;
+    font-weight: bold;
+}
+
+.title {
+    text-transform: uppercase;
+}
