@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>lesson-3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Форма заявки на работу в зоопарке</h1>
+  <h3>Пожалуйста, заполните форму. Обязательные поля помечены <span style="color:red">*</span></h3>
+  <form action="formHandler.php" name="simple form">
+    <fieldset>
+      <legend>Контактная информация</legend>
+      <br>
+      <label>
+        <span>Имя</span>
+        <span style="color: red" class="space">*</span>
+        <input type="text" required size="30">
+      </label>
+      <br>
+      <br>
+      <label>
+        <span class="space1">Телефон</span>
+        <input type="tel" size="30">
+      </label>
+      <br>
+      <br>
+      <label>
+        <span>Email</span>
+        <span style="color: red" class="space2">*</span>
+        <input type="email" required size="30">
+      </label>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Персональная информация</legend>
+      <br>
+      <label>
+        <span>Возраст</span>
+        <span style="color: red" class="space3">*</span>
+        <input class="number" type="number" required min="0">
+      </label>
+      <br>
+      <br>
+      <label>
+        <span class="space4">Пол</span>
+        <select>
+          <option value="woman">Женщина</option>
+          <option value="man">Мужчина</option>
+        </select>
+      </label>
+      <br>
+      <br>
+      <label>
+        <span class="space5">Перечислите личные качества</span>
+        <textarea rows="6" cols="30" name="text"></textarea>
+      </label>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Выберите ваших любимых животных</legend>
+      <br>
+      <label class="gap">
+        <input type="checkbox" value="option1">
+        Зебра
+      </label>
+      <label class="gap2">
+        <input type="checkbox" value="option2">
+        Кошак
+      </label>
+      <label class="gap3">
+        <input type="checkbox" value="option3">
+        Анаконда
+      </label>
+      <label>
+        <input type="checkbox" value="option4">
+        Человек
+      </label>
+      <br>
+      <br>
+      <label class="gap4">
+        <input type="checkbox" value="option5">
+        Слон
+      </label>
+      <label class="gap5">
+        <input type="checkbox" value="option6">
+        Антилопа
+      </label>
+      <label class="gap6">
+        <input type="checkbox" value="option7">
+        Голубь
+      </label>
+      <label>
+        <input type="checkbox" value="option8">
+        Краб
+      </label>
+    </fieldset>
+    <br>
+    <input type="submit" value="Отправить информацию">
+  </form>
+</body>
+
+</html>
