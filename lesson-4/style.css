@@ -13,7 +13,7 @@ body {
 .header {
     position: absolute;
     height: 68px;
-    left: 4%;
+    left: 0;
     right: 4%;
     top: 1%;
 }
@@ -21,7 +21,7 @@ body {
 h1 {
     position: absolute;
     height: 51px;
-    left: -2%;
+    left: 0;
     right: 52%;
     top: 10%;
     font-size: 42px;
@@ -29,19 +29,20 @@ h1 {
 }
 
 .posts {
+    position: absolute;
     width: 110px;
     height: 27px;
-    position: absolute;
-    left: 77%;
-    top: 67%;
+    left: 80%;
+    top: 63%;
     font-size: 17px;
     text-align: center;
     color: #0070A0;
 }
+
 .blogs {
     position: absolute;
     height: 486px;
-    left: 2%;
+    left: 0;
     right: 2%;
     top: 10%;
 }
@@ -51,7 +52,7 @@ h1 {
     height: 487px;
     width: 355px;
     top: 20%;
-    left: 0%;
+    left: 0;
     right: 60%;
     background-color: white;
 }
@@ -62,17 +63,17 @@ img {
     width: 355px;
 }
 
-.little-text-1 {
+.button-1 {
     position: absolute;
     top: 55%;
-    right: 0%;
+    right: 0;
     left: 6%;
     height: 22px;
     width: 100px;
     background-color: #E6F7FF;
 }
 
-.little-text-text-1 {
+.button-text-1 {
     position: absolute;
     font-size: 12px;
     font-style: normal;
@@ -94,7 +95,7 @@ h2 {
 .content-text {
     position: absolute;
     top: 77%;
-    left: 7%;
+    left: 6%;
     right: 15%;
     font-size: 14px;
     font-style: normal;
@@ -104,7 +105,7 @@ h2 {
 .data {
     position: absolute;
     top: 91%;
-    left: 7%;
+    left: 6%;
     font-size: 12px;
     font-style: normal;
     font-weight: 100;
@@ -120,17 +121,17 @@ h2 {
     background-color: white;
 }
 
-.little-text-2 {
+.button-2 {
     position: absolute;
     top: 55%;
-    right: 0%;
+    right: 0;
     left: 6%;
     height: 22px;
     width: 90px;
     background-color: #E6F7FF;
 }
 
-.little-text-text-2 {
+.button-text-2 {
     position: absolute;
     font-size: 12px;
     font-style: normal;
@@ -146,21 +147,21 @@ h2 {
     width: 355px;
     top: 20%;
     left: 62%;
-    right: 0%;
+    right: 0;
     background-color: white;
 }
 
-.little-text-3 {
+.button-3 {
     position: absolute;
     top: 55%;
-    right: 0%;
+    right: 0;
     left: 6%;
     height: 22px;
     width: 60px;
     background-color: #E6F7FF;
 }
 
-.little-text-text-3 {
+.button-text-3 {
     position: absolute;
     font-size: 12px;
     font-style: normal;
