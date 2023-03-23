@@ -13,15 +13,11 @@ html {
 @font-face {
     font-family: 'Montserrat-black';
     src: url('./font/Montserrat-Black.ttf') format('truetype');
-    font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
     font-family: 'Montserrat';
     src: url('./font/Montserrat-Regular.ttf') format('truetype');
-    font-style: normal;
-    font-display: swap;
 }
 
 body {
@@ -90,12 +86,14 @@ section {
 .title-text-1 {
     margin-top: 20px;
     font-family: 'Montserrat';
+    font-weight: 500;
     color: #2753A2;
     font-size: 26em;
 }
 
 .text-1 {
     font-family: 'Montserrat';
+    font-weight: 500;
     margin-top: 10px;
     font-size: 20em;
 }
@@ -114,6 +112,7 @@ section {
 
 .title-text-2 {
     font-family: 'Montserrat';
+    font-weight: 500;
     margin-top: 20px;
     color: #2753A2;
     font-size: 26rem;
@@ -121,6 +120,7 @@ section {
 
 .text-2 {
     font-family: 'Montserrat';
+    font-weight: 500;
     margin-top: 10px;
     font-size: 20rem;
 }
@@ -138,6 +138,7 @@ section {
 
 .title-text-3 {
     font-family: 'Montserrat';
+    font-weight: 500;
     margin-top: 20px;
     color: #2753A2;
     font-size: 26px;
@@ -145,6 +146,7 @@ section {
 
 .text-3 {
     font-family: 'Montserrat';
+    font-weight: 500;
     margin-top: 10px;
     font-size: 20px;
 }
