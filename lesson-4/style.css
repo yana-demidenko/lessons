@@ -1,0 +1,171 @@
+*,::before,::after {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #F5F5F5;
+    width: 1440px;
+    height: 747px;
+    margin: 0 auto;
+}
+
+.posts {
+    display: inline-block;
+    width: 100%;
+    max-width: 1230px;
+    height: 587px;
+    padding: 80px 105px 80px 105px;
+}
+
+.header {
+    width: 100%;
+    max-width: 1130px;
+    height: 68px;
+}
+
+h1 {
+    width: 533px;
+    height: 51px;
+    font-size: 42px;
+    font-weight: 400;
+    margin-left: 50px;
+
+}
+
+.link {
+    width: 110px;
+    height: 27px;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-top: -30px;
+    color: #0070A0;
+}
+
+.blogs {
+
+    display: inline-block;
+    height: 487px;
+    width: 1130px;
+    margin: 50px;
+
+}
+
+.blog-first {
+    display: inline-block;
+    height: 487px;
+    width: 355px;
+    margin-right: 19px;
+    background-color: white;
+}
+
+img {
+    height: 238px;
+    width: 355px;
+}
+
+.content {
+    padding: 25px 43px 28px 24px;
+}
+
+.button-1 {
+    display: inline-block;
+    margin: 0 8px 8px 0;
+    padding: 2px 12px 4px;
+    background-color: #E6F7FF;
+}
+
+.button-text-1 {
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    color: #2C90C9;
+}
+
+h2 {
+
+    height: 63px;
+    font-size: 25px;
+    font-style: normal;
+    line-height: 31px;
+    font-weight: 500;
+}
+
+.content-text {
+
+    margin-top: 12px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.data {
+
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 100;
+
+}
+
+.blog-second {
+
+    display: inline-block;
+    height: 487px;
+    width: 355px;
+    margin-right: 19px;
+    background-color: white;
+}
+
+.button-2 {
+
+    display: inline-block;
+    margin: 0 8px 8px 0;
+    padding: 2px 12px 4px;
+    background-color: #E6F7FF;
+}
+
+.button-text-2 {
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    color: #2C90C9;
+}
+
+.blog-third {
+    display: inline-block;
+    height: 487px;
+    width: 355px;
+    background-color: white;
+}
+
+.button-3 {
+
+    display: inline-block;
+    margin: 0 8px 8px 0;
+    padding: 2px 12px 4px;
+    background-color: #E6F7FF;
+}
+
+.button-text-3 {
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    color: #2C90C9;
+}
