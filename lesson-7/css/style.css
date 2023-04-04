@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url(/lesson-7/fonts/gilroy-regular.ttf);
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url(/lesson-7/fonts/gilroy-bold.ttf);
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    height: auto;
+    background-color: #FFF;
+    box-shadow: 0 0 25px #C7C7C7;
+    border-radius: 5px;
+    margin: 40px;
+}
+
+p {
+    margin: 24px calc(50% - 190px) 35px;
+    font: 14px 'Gilroy', sans-serif;
+    height: auto;
+    width: 380px;
+    text-align: center;
+}
+
+.icon {
+    margin: 19px calc(50% - 50px) 0px;
+    height: 100px;
+}
+
+.icon-2 {
+    margin: 39px calc(50% - 33px) 0px;
+    height: 66px;
+}
+
+a {
+    display: inline-flex;
+    text-align: center;
+    padding: 16px 20px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button {
+    width: 200px;
+    height: 70px;
+    margin: 0 calc(50% - 100px) 40px;
+    color: #FFF;
+    font: 18px 'Gilroy-Bold', sans-serif;
+    background-color: #E31E24;
+    border-radius: 5px;
+    border: none;
+}
+
+.title, .title-2, .price {
+    height: 24px;
+    font: 22px 'Gilroy-Bold', sans-serif;
+}
+
+.title {
+    margin: 25px calc(50% - 48.5px) 0;
+    width: 97px;
+}
+
+.title-2 {
+    margin: 43px calc(50% - 127px) 0;
+    width: 254px;
+}
+
+.price {
+    margin: auto calc(50% - 56px) 44px;
+    width: 111px;
+}
+
+.list {
+    display: inline-flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 465px;
+    height: 50px;
+    padding: 0;
+    margin: auto calc(50% - 232.5px) 0;
+    font-family: 'Gilroy', sans-serif;
+}
+
+.item {
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0 0 4px #C7C7C7;
+    border-radius: 5px;
+}
+
+.active {
+    background-color: #E31E24;
+    border-radius: 5px;
+}
+
+.first {
+    color: #FFF;
+}
+
+.item :hover {
+    background-color: #E31E24;
+    color: #FFF;
+}
