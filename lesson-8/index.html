@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>lesson-8</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="block-1">
+            <h2 class="title">Оформить заказ</h2>
+            <form action="" name="form-order" autocomplete="on">
+                    <label>
+                        <span>ФИО*</span>
+                        <input class="entry-field" type="text" name="full-name" required placeholder="Введите ваше ФИО">
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        <span>Телефон*</span>
+                        <input class="entry-field" type="tel" name="telephone" required placeholder="Введите ваш номер телефона">
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        <span>Email*</span>
+                        <input class="entry-field" type="email" name="email" required placeholder="Введите ваш email">
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        <span>Адрес*</span>
+                        <input class="entry-field" type="text" name="adress" required placeholder="Введите ваш адрес">
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        <span>Примечание к заказу</span>
+                        <textarea name="text"></textarea>
+                    </label>
+                    <br>
+                    <input class="button" type="submit" value="Оформить заказ">
+            </form>
+        </div>
+        <div class="block-2">
+            <h2 class="title">Способ доставки</h2>
+            <label class="checkbox">
+                <input type="radio" name="check"> Склад РБ
+                <span class="text">Это самый удобный, бесплатный и быстрый способ получения заказа!</span>
+                <span class="text">Адрес склада: г.Гродно, ул. Горького, 91</span>
+                <span class="text">Отгрузка осуществляется по предварительной договоренности, телефон для связи +375 (15) 261 08 81</span>
+            </label>
+        </div>
+    </div>
+</body>
+</html>
