@@ -5,53 +5,83 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./fonts/Roboto-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 @font-face {
     font-family: "Montserrat";
-    src: url(./fonts/Montserrat-Regular.ttf) format("truetype");
+    src: url(./fonts/Montserrat-Medium.ttf) format("truetype");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
+
 * {
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 .wrap {
     width: 100%;
     max-width: 1280px;
     display: flex;
     justify-content: space-between;
+    margin: 10px auto;
 }
-.title {
-    margin: 0 0 55px 0;
+
+.title-1,.title-2 {
     width: 410px;
-    font: 50px/60px "Roboto", sans-serif;
+    font: 500 50px/60px "Roboto", sans-serif;
 }
-input {
-    font: 16px/19px "Montserrat", sans-serif;
+
+.title-1 {
+    margin: 0 0 55px 0;
 }
-span {
+
+.title-2 {
+    margin: 0 0 55px 40px;
+}
+
+.label-text {
     display: block;
     font: 20px/24px "Montserrat", sans-serif;
+    color: #26292E;
 }
+
 .block-1 {
     width: 605px;
-    height: 766px;
-    display: inline-block;
 }
-.entry-field {
+
+.block-2 {
+    width: 100%;
+    max-width: 635px;
+}
+
+.input-text {
     height: 48px;
+    padding-inline: 20px;
+    margin-top: 10px;
+    font: 500 16px/19px "Montserrat", sans-serif;
 }
-textarea {
+
+.area {
     height: 146px;
     resize: none;
 }
-textarea, .entry-field {
+
+.area,.input-text {
     width: 605px;
     background: #FFF;
     border: none;
     box-shadow: 0px 0px 10px #dcd9d9;
 }
+
 .button {
     margin-top: 19px;
     padding: 18px 36px;
@@ -59,6 +89,86 @@ textarea, .entry-field {
     color: #FFF;
     border: none;
     background: #408858;
-    font: 20px/24px "Montserrat", sans-serif;
+    font: 500 20px/24px "Roboto", sans-serif;
     text-transform: uppercase;
+}
+
+.checkbox {
+    margin: 0 0 0 40px;
+    display: inline-block;
+}
+
+.check {
+    display: none;
+}
+
+.text {
+    width: 300px;
+    position: relative;
+    padding-left: 25px;
+    font: 400 30px/35px "Roboto", sans-serif;
+    color: #26292E;
+}
+
+label :last-child {
+    margin-bottom: 29px;
+}
+
+.paragraph,.paragraph-2 {
+    padding-top: 9px;
+    font: 400 20px/28px "Roboto", sans-serif;
+    display: block;
+}
+
+.paragraph-2 {
+    color: #26292E;
+}
+
+.paragraph {
+    color: #414141;
+}
+
+.text::before,.text::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.text::before {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #408858;
+    left: 0;
+}
+
+.text::after {
+    width: 12px;
+    height: 12px;
+    background-color: #408858;
+    left: 3px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.check:checked+.text::after {
+    opacity: 1;
+}
+
+@media (max-width: 1086px) {
+    .wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block-1 {
+        order: 2;
+        width: 100%;
+        max-width: 605px;
+    }
+
+    .block-2 {
+        order: 1;
+    }
 }
