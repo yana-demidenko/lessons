@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Mono";
+  src: url(../fonts/ChivoMono-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*Задаем цвет body*/
+body {
+  background: #c4e2f9;
+}
+
+/*Создаём блок для контента*/
+.loader {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+/*Задаем размеры, расположение для темно-синего блока и добавляем ему анимацию */
+.loader-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  width: 160px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -80px;
+  border-radius: 5px;
+  background-color: #1e3f57;
+  animation: block1 3s cubic-bezier(0.55, 0.3, 0.24, 0.99) infinite;
+}
+
+/*Задаем размеры, расположение для синего блока (экрана) и задаем ему animation-name*/
+.loader-block:nth-child(2) {
+  z-index: 11;
+  width: 150px;
+  height: 90px;
+  margin-top: -45px;
+  margin-left: -75px;
+  border-radius: 3px;
+  background-color: #3c617d;
+  animation-name: block2;
+}
+
+/*Задаем размеры, расположение для светло-синего блока (кнопки) и задаем ему animation-name*/
+.loader-block:nth-child(3) {
+  z-index: 12;
+  width: 40px;
+  height: 20px;
+  margin-top: 50px;
+  margin-left: -20px;
+  border-radius: 0 0 5px 5px;
+  background-color: #6bb2cd;
+  animation-name: block3;
+}
+
+/*Пишем стили для текста*/
+.loader-text {
+  position: fixed;
+  top: 60%;
+  left: 47%;
+  font: 500 20px/24px "Mono", sans-serif;
+}
+
+/*Добавляем темно-синему блоку анимацию, в которой происходит изменение размера и расположения блока */
+@keyframes block1 {
+
+  3%, 97% {
+    width: 160px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -80px;
+  }
+
+  30%, 36% {
+    width: 80px;
+    height: 120px;
+    margin-top: -60px;
+    margin-left: -40px;
+  }
+
+  63%, 69% {
+    width: 40px;
+    height: 80px;
+    margin-top: -40px;
+    margin-left: -20px;
+  }
+}
+
+/*Добавляем синему блоку (экрану) анимацию, в которой происходит изменение размера и расположения блока */
+@keyframes block2 {
+
+  3%, 97% {
+    width: 150px;
+    height: 90px;
+    margin-top: -45px;
+    margin-left: -75px;
+  }
+
+  30%, 36% {
+    width: 70px;
+    height: 96px;
+    margin-top: -48px;
+    margin-left: -35px;
+  }
+
+  63%, 69% {
+    width: 32px;
+    height: 60px;
+    margin-top: -30px;
+    margin-left: -16px;
+  }
+}
+
+/*Добавляем светло-синему блоку (кнопке) анимацию, в которой происходит изменение размера и расположения блока */
+@keyframes block3 {
+
+  3%, 97% {
+    width: 40px;
+    height: 20px;
+    margin-top: 50px;
+    margin-left: -20px;
+  }
+
+  30%, 36% {
+    width: 8px;
+    height: 8px;
+    margin-top: 49px;
+    margin-left: -5px;
+    border-radius: 8px;
+  }
+
+  63%, 69% {
+    width: 16px;
+    height: 4px;
+    margin-top: -37px;
+    margin-left: -8px;
+    border-radius: 10px;
+  }
+}
