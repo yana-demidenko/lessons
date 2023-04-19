@@ -27,14 +27,14 @@ body {
 }
 
 .header {
+  border-bottom: 1px #FFF solid;
   margin: 0 209px 0 209px;
   padding-bottom: 15px;
+  position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 100%;
-  max-width: 1405px;
-  border-bottom: 1px solid #fff;
+  align-items: center;
+  width: 1405px;
 }
 
 .header__logo svg {
@@ -172,7 +172,8 @@ body {
 
 .fog {
   position: absolute;
+  width: 1720px;
   z-index: 5;
-  top: 40%;
-  left: -160px;
+  top: 35%;
+  left: 4%;
 }
