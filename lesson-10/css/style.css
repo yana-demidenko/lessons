@@ -22,30 +22,38 @@
   font-display: swap;
 }
 
+* {
+  text-decoration: none;
+}
+
 body {
   background: #1E1E1E;
+  display: flex;
+  background-image: url("../image/mask.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 40px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .header {
   border-bottom: 1px #FFF solid;
-  margin: 0 209px 0 209px;
+  margin: 0 auto;
   padding-bottom: 15px;
-  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 1405px;
-}
-
-.header__logo svg {
-  width: 188px;
-  margin-right: 32px;
+  flex-wrap: wrap;
 }
 
 .menu-wrap,
 .icons {
   display: flex;
   align-items: center;
+}
+
+.menu-wrap {
+  justify-content: space-between;
 }
 
 .menu-list,
@@ -59,19 +67,14 @@ body {
 .menu__link {
   color: #CBCBCB;
   font: 300 20px/24px "Montserrat", sans-serif;
-  text-decoration: none;
 }
 
 .menu__item {
   margin-right: 30px;
 }
 
-.menu__item:last-child {
-  margin-right: 178px;
-}
-
 .icons-item {
-  margin-right: 23.35px;
+  margin-right: 23px;
 }
 
 .icons-item:last-child {
@@ -80,10 +83,10 @@ body {
 
 .header__link {
   margin-right: 20px;
-  text-decoration: none;
+  height: 50px;
 }
 
-.button {
+.connect {
   width: 191px;
   color: #fff;
   font: 300 20px/24px "Montserrat", sans-serif;
@@ -97,21 +100,20 @@ body {
 }
 
 .preview {
-  width: 1718px;
   height: 894px;
-  background: url("../image/mask.png") no-repeat;
-  background-position-x: 50px;
-  background-size: 100%;
+  width: 1718px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
 }
 
 .preview-top-text-1 {
   width: 391px;
   font: 300 italic 14px/18px "Montserrat", sans-serif;
   color: #CBCBCB;
-  position: relative;
   text-align: center;
-  top: 20%;
-  left: 41%;
+  margin: 129px auto 0;
 }
 
 .preview-top__title {
@@ -119,9 +121,7 @@ body {
   font: 400 60px/78px "Candal", sans-serif;
   color: #fff;
   text-align: center;
-  position: relative;
-  top: 15%;
-  left: 33%;
+  margin-top: 5px;
 }
 
 .nft {
@@ -132,32 +132,25 @@ body {
   width: 679px;
   font: 300 20px/26px "Montserrat", sans-serif;
   color: #CBCBCB;
-  text-align: center;
-  position: relative;
-  top: 13%;
-  left: 32%;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align:center;
 }
 
 .content-button {
-  padding-bottom: 100px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  top: 22%;
-  left: 2%;
+  width: auto;
+  margin-top: 100px;
   z-index: 10;
+  padding-bottom: 100px;
 }
 
 .content-link-1, .content-link-2 {
   font: 400 30px/30px "Candal", sans-serif;
   text-transform: uppercase;
-  text-decoration: none;
-  color: #FF4C24;
+  padding: 14px 71px;
 }
 .content-link-1 {
   color: #FF4C24;
-  padding: 14px 71px 16px 71px;
   background: rgba(255, 76, 36, 0.15);
   border: 1px solid #FF4C24;
   backdrop-filter: blur(10px);
@@ -166,14 +159,26 @@ body {
 
 .content-link-2 {
   color: #101413;
-  padding: 14px 60px 16px 60px;
   background: #59FFB7;
 }
 
 .fog {
   position: absolute;
-  width: 1720px;
   z-index: 5;
-  top: 35%;
-  left: 4%;
+  left: 15%;
+  top: 20%;
+  width: 100%;
+  max-width: 1300px;
+}
+
+@media screen and (max-width:1300px) {
+  .icons {
+    display: none;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .menu-wrap {
+    display: none;
+  }
 }
