@@ -26,28 +26,30 @@
   text-decoration: none;
 }
 
+body, .header, .preview {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 body {
   background: #1E1E1E;
-  display: flex;
-  background-image: url("../image/mask.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 0 40px;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
 .header {
   border-bottom: 1px #FFF solid;
-  margin: 0 auto;
+  width: 75%;
   padding-bottom: 15px;
-  display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 5;
 }
 
-.menu-wrap,
-.icons {
+.header__logo {
+  width: 189px;
+}
+
+.menu-wrap,.icons,.menu-list,.icons-item {
   display: flex;
   align-items: center;
 }
@@ -56,16 +58,15 @@ body {
   justify-content: space-between;
 }
 
-.menu-list,
-.icons-item {
-  display: flex;
+.menu-list,.icons-item {
   justify-content: center;
-  align-items: center;
   list-style: none;
 }
 
 .menu__link {
   color: #CBCBCB;
+}
+.menu__link,.connect {
   font: 300 20px/24px "Montserrat", sans-serif;
 }
 
@@ -77,19 +78,13 @@ body {
   margin-right: 23px;
 }
 
-.icons-item:last-child {
-  margin-right: 55px;
-}
-
 .header__link {
-  margin-right: 20px;
   height: 50px;
 }
 
 .connect {
   width: 191px;
   color: #fff;
-  font: 300 20px/24px "Montserrat", sans-serif;
   padding: 13px 24.5px;
   border: 1px solid #fff;
   text-transform: uppercase;
@@ -100,19 +95,23 @@ body {
 }
 
 .preview {
+  width: 100vw;
+  z-index: 10;
+  background-size: cover;
+  position: relative;
   height: 894px;
-  width: 1718px;
-  display: flex;
-  flex-wrap: wrap;
   align-content: center;
   flex-direction: column;
 }
-
+.preview-top-text-1,.preview-top__title,.preview-top-text-2{
+  text-align: center;
+}
+.preview-top-text-1,.preview-top-text-2{
+  color: #CBCBCB;
+}
 .preview-top-text-1 {
   width: 391px;
   font: 300 italic 14px/18px "Montserrat", sans-serif;
-  color: #CBCBCB;
-  text-align: center;
   margin: 129px auto 0;
 }
 
@@ -120,37 +119,31 @@ body {
   width: 680px;
   font: 400 60px/78px "Candal", sans-serif;
   color: #fff;
-  text-align: center;
   margin-top: 5px;
 }
 
-.nft {
+.nft,.content-link-1 {
   color: #FF4C24;
 }
 
 .preview-top-text-2 {
   width: 679px;
   font: 300 20px/26px "Montserrat", sans-serif;
-  color: #CBCBCB;
-  margin: 0 auto;
-  margin-top: 30px;
-  text-align:center;
+  margin: 30px auto 0;
 }
 
 .content-button {
   width: auto;
   margin-top: 100px;
-  z-index: 10;
-  padding-bottom: 100px;
 }
 
-.content-link-1, .content-link-2 {
+.content-link-1,.content-link-2 {
   font: 400 30px/30px "Candal", sans-serif;
   text-transform: uppercase;
   padding: 14px 71px;
 }
+
 .content-link-1 {
-  color: #FF4C24;
   background: rgba(255, 76, 36, 0.15);
   border: 1px solid #FF4C24;
   backdrop-filter: blur(10px);
@@ -165,20 +158,42 @@ body {
 .fog {
   position: absolute;
   z-index: 5;
-  left: 15%;
-  top: 20%;
-  width: 100%;
-  max-width: 1300px;
+  top: 30%;
+  bottom: auto;
+  width: 100vw;
 }
 
-@media screen and (max-width:1300px) {
-  .icons {
-    display: none;
-  }
+.background, .black {
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
+  height: auto;
+  bottom: -50px;
+  top: auto;
+}
+.black {
+  z-index: 3;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1655px) {
   .menu-wrap {
     display: none;
   }
+
+  .preview-top-text-1 {
+    margin: 100px auto 0;
+  }
+}
+
+@media screen and (max-width:1050px) {
+  .connect {
+    display: none;
+  }
+
+  .preview-top-text-1 {
+    margin: 70px auto 0;
+  }
+  .fog {
+    z-index: 1;
+}
 }
