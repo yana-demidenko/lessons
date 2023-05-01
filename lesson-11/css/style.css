@@ -33,7 +33,6 @@ li {
 
 body {
     width: 100%;
-    max-width: 1440px;
     min-height: 2595px;
     display: grid;
     grid-template-columns: 330px auto;
