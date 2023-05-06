@@ -10,9 +10,11 @@
 
 <body>
     <script>
+        (function seasonByMonth() {
         const month = parseInt(prompt("Введите номер месяца от 1 до 12"));
         const season = month == 12 || month >= 1 && month < 3 ? "Зима" : month >= 3 && month < 6 ? "Весна" : month >= 6 && month < 9 ? "Лето" : month >= 9 && month < 12 ? "Осень" : "Неправильно ввели число, попробуйте ёще раз";
-        alert(season)
+        alert(season);
+        })()
     </script>
 </body>
 
