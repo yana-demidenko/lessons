@@ -81,7 +81,6 @@ a {
 }
 
 /* --- FIRST SECTION  --- */
-
 .first__section {
     display: flex;
     width: 100vw;
@@ -126,7 +125,6 @@ a {
 }
 
 /* --- SECOND SECTION --- */
-
 .second__section {
     width: 100vw;
     display: flex;
