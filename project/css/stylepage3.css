@@ -1,18 +1,4 @@
-@font-face {
-    font-family: "Volvo Novum";
-    src: url(../fonts/FontsFree-Net-Volvo-Novum-Medium-1.ttf);
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Volvo Broad";
-    src: url(../fonts/VolvoBroad.ttf);
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
+@import url(./fonts.css);
 
 * {
     margin: 0;
