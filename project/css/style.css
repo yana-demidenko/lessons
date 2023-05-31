@@ -1,18 +1,4 @@
-@font-face {
-    font-family: "Volvo Novum";
-    src: url(../fonts/FontsFree-Net-Volvo-Novum-Medium-1.ttf);
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Volvo Broad";
-    src: url(../fonts/VolvoBroad.ttf);
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
+@import url(./fonts.css);
 
 * {
     margin: 0;
@@ -216,7 +202,9 @@ header {
 
 /* --- FIRST SECTION  --- */
 .first__section {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     width: 100vw;
     height: 100vh;
     margin: 64px 0 0 0;
@@ -225,34 +213,36 @@ header {
 .banner {
     width: 100vw;
     height: 100vh;
-    position: absolute;
     object-fit: cover;
+    grid-row: 1/2;
+    grid-column: 1/2;
     left: 0;
     right: 0;
-
 }
 
 .banner__wrap {
     width: 100vw;
+    grid-row: 1/2;
+    grid-column: 1/2;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 60px;
+    padding-top: 100px;
 }
 
 .banner__text {
     z-index: 5;
+    margin-top: 15px;
     font: 500 20px/1.4 "Volvo Novum", Arial, sans-serif;
     color: #fff;
     text-transform: uppercase;
 }
 
 .big {
-    margin-top: 35px;
+    margin-top: 5px;
     height: 72px;
-    transform: scale(1, 1.5);
-    font: 900 60px/1 "Volvo Broad", sans-serif;
+    font: 900 72px/1 "Volvo Broad", sans-serif;
 }
 
 .link {
@@ -289,7 +279,6 @@ header {
 .section-title {
     width: 700px;
     text-align: center;
-    position: relative;
     color: rgba(0, 0, 0, 0.56);
     font: 500 32px/28px "Volvo Novum", sans-serif;
 }
@@ -345,7 +334,8 @@ header {
 .third__baner {
     margin-top: 60px;
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
     justify-content: center;
     grid-gap: 50px;
 }
@@ -370,19 +360,19 @@ header {
 
 .third__title-text-white-car,
 .third__title-text-grey-car {
-    padding: 50px 0 0 0;
+    margin: 40px 0 0 0;
     font: 500 14px/1.5 "Volvo Novum", sans-serif;
     color: #fff;
 }
 
 .third__title-btext-grey-car,
 .third__title-btext-white-car {
-    font: 900 15px/1 "Volvo Broad", sans-serif;
+    font: 900 28px/1 "Volvo Broad", sans-serif;
     color: #fff;
-    padding: 20px 0 0 0;
+    margin: 10px 0 0 0;
     letter-spacing: 0.32px;
     text-transform: uppercase;
-    transform: scale(1, 2.2);
+
 }
 
 
@@ -439,6 +429,7 @@ header {
     grid-template-rows: auto auto;
     grid-template-columns: repeat(4, 23vw);
     justify-content: center;
+    justify-items: center;
     grid-gap: 10px
 }
 
@@ -523,63 +514,69 @@ a :hover {
 }
 
 .forth__section-button {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: auto;
+    grid-row: 3/4;
+    grid-column: 2/4;
     margin-top: 40px;
-    gap: 110px;
 }
 
 .button {
     text-transform: uppercase;
     font: 600 14px/22px "Volvo Novum", sans-serif;
     color: #2a609d;
+    padding-right: 20px;
 }
 
 /*FIFTH SECTION*/
 .fifth__section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 100px;
     width: 100vw;
-    padding: 30px 0 60px 0;
-    justify-content: center;
-    align-items: center;
     background-color: #fafafa;
 }
 
 .fifth__section-title {
+    padding: 40px 0;
+    width: 70vw;
     text-align: center;
-    color: #000;
     font: 600 32px/1.12 "Volvo Novum", sans-serif;
+    color: rgba(0, 0, 0, 0.56);
 }
 
 .image5 {
-    padding: 50px 30px 10px 30px;
-    width: 100vw;
+    width: 95vw;
 }
 
 .fifth__section-card {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(3, 30vw);
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+}
+
+.fifth__section-first-card,
+.fifth__section-second-card,
+.fifth__section-third-card {
+    width: 30vw;
 }
 
 .fiftt-card-title {
     color: #000;
     font: 700 20px/1.4 "Volvo Novum", sans-serif;
-    padding: 15px 0 10px 0; 
+    padding: 15px 0 10px 0;
 }
 
 .fiftt-card-info {
     font: 300 16px/1.5 "Volvo Novum", sans-serif;
     color: rgba(0, 0, 0, 0.56);
+    padding-bottom: 90px;
 }
 
 .fifth__section-button {
     text-align: center;
     justify-content: center;
-    margin: 50px 0 0 0;
+    margin: 10px 0 50px 0;
 
 }
 
@@ -620,7 +617,7 @@ a :hover {
 
 .sixth__section-link {
     display: grid;
-    grid-template-columns: repeat(2, 20vw);
+    grid-template-columns: repeat(2, 30vw);
     grid-template-rows: auto auto;
     grid-gap: 15px;
 }
@@ -677,4 +674,138 @@ footer {
 
 .footer__menu-item:hover {
     color: #2a609d;
+}
+
+@media screen and (width <=1380px) {
+    .third__baner {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .third__baner-image-first {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        width: 95vw;
+    }
+
+    .third__baner-image-second {
+        grid-row: 3/4;
+        grid-column: 1/2;
+        width: 95vw;
+    }
+
+    .third__title-white-car {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .third__title-grey-car {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+
+    .third__section-button-white-car {
+        grid-row: 2/3;
+        grid-column: 1/2;
+
+    }
+
+    .third__section-button-grey-car {
+        grid-row: 4/5;
+        grid-column: 1/2;
+
+    }
+
+    .third__title-text-white-car,
+    .third__title-text-grey-car {
+        margin: 60px 0 0 0;
+        font: 500 26px/1.5 "Volvo Novum", sans-serif;
+        color: #fff;
+    }
+
+    .third__title-btext-grey-car,
+    .third__title-btext-white-car {
+        font: 900 45px/1 "Volvo Broad", sans-serif;
+        margin: 20px 0 0 0;
+    }
+}
+
+@media screen and (width <=900px) {
+    .second__baner-image-second {
+        width: 56vw;
+    }
+
+    .second__baner-image-third {
+        width: 42.6vw;
+    }
+}
+
+@media screen and (width <=690px) {
+    .second__baner-image-second {
+        width: 55.7vw;
+    }
+
+    .second__baner-image-third {
+        width: 42.5vw;
+    }
+
+    .section-title {
+        text-align: left;
+    }
+
+    .fifth__section-card {
+        flex-direction: column;
+    }
+
+    .fifth__section-first-card,
+    .fifth__section-second-card,
+    .fifth__section-third-card {
+        width: 80vw;
+    }
+
+    .fiftt-card-info {
+        padding-bottom: 20px;
+    }
+
+    .image5 {
+        width: 100vw;
+    }
+
+    .sixth__section-link {
+        grid-template-columns: 95vw;
+        grid-template-rows: repeat(4, auto);
+        grid-gap: 15px;
+    }
+
+    .cars {
+        display: none;
+    }
+
+    .sixth__section-text {
+        text-align: left;
+    }
+}
+
+@media screen and (width <=627px) {
+    .second__baner-image-second {
+        width: 49.1vw;
+    }
+
+    .second__baner-image-third {
+        width: 49vw;
+    }
+
+}
+
+@media screen and (width <=472px) {
+    .second__baner-image-second {
+        width: 48.1vw;
+    }
+
+    .footer__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
