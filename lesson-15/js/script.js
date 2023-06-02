@@ -11,11 +11,11 @@ document.getElementById('form').addEventListener('submit', function (event) {
 
     const name = document.getElementById('name').value.trim();
     const phone = document.getElementById('phone').value.trim();
-    const agreement = document.getElementById('agreement').checked;
+    const accept = document.getElementById('accept').checked;
 
     clearError('nameError');
     clearError('phoneError');
-    clearError('agreementError');
+    clearError('acceptError');
 
     if (name === '') {
         showError('nameError', 'Поле не должно быть пустым');
@@ -31,12 +31,12 @@ document.getElementById('form').addEventListener('submit', function (event) {
         showError('nameError', 'Имя не должно содержать цифры');
     }
 
-    if (!agreement) {
-        showError('agreementError', 'Вы должны согласиться с условиями');
+    if (!accept) {
+        showError('acceptError', 'Вы должны согласиться с условиями');
     }
 
-    if (name !== '' && phone !== '' && /^\d+$/.test(phone) && !/\d/.test(name) && agreement) {
+    if (name !== '' && phone !== '' && /^\d+$/.test(phone) && !/\d/.test(name) && accept) {
         alert('Форма отправлена');
         document.getElementById('form').reset();
     }
-});
+})
