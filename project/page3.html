@@ -14,7 +14,7 @@
     </a>
     <nav>
         <ul class="menu-list">
-            <li class="menu__item">
+            <li class="menu__item cars">
                 <a href="#" class="menu__link">Автомобили</a>
             </li>
             <li class="menu__item meenu">
@@ -78,7 +78,7 @@
     </section>
     <section class="second__section">
         <div class="player">
-            <video src="./video/recharge-hero-video-21_9_webm.webm" controls></video>
+            <video src="./video/recharge-hero-video-21_9_webm.webm" controls id="video"></video>
         </div>
     </section>
     <section class="section__third">
@@ -86,20 +86,20 @@
             поездки комфортнее, а планету — чище.</h2>
     </section>
     <section class="forth__section">
-        <img src="./image/page3-image-1.webp" class="image1">
-        <div class="forth__section-card">
-            <div class="forth__section-first-card">
+        <img src="./image/page3-image-1.webp" class="image1" id="image1">
+        <div class="forth__section-cards">
+            <div class="forth__section-card">
                 <h3 class="forth-card-title">Роскошь и забота</h3>
                 <p class="forth-card-info">Сочетание непревзойденной мощности и низких (или нулевых) выбросов в
                     атмосферу. Технологии, дизайн и экологичность Volvo Recharge выведут ваши поездки на новый уровень.
                 </p>
             </div>
-            <div class="forth__section-second-card">
+            <div class="forth__section-card">
                 <h3 class="forth-card-title">Безопасность</h3>
                 <p class="forth-card-info">С 1927 года безопасность — главная ценность Volvo. Мы стремимся сделать
                     автомобили Recharge самыми безопасными на дороге — как для людей, так и для их будущего.</p>
             </div>
-            <div class="forth__section-third-card">
+            <div class="forth__section-card">
                 <h3 class="forth-card-title">Настоящая экологичность</h3>
                 <p class="forth-card-info">Ездить, не загрязняя воздух, вы можете не только на полностью электрическом
                     автомобиле, но и на подключаемом гибриде. Всё, что для этого нужно — включить режим Pure Electric.
@@ -226,19 +226,19 @@
             <h2 class="seven__section-title"><span class="black-text">Стоимость владения</span> электрическим
                 автомобилем может быть существенно ниже, чем стоимость владения аналогичным автомобилем с ДВС.</h2>
         </div>
-        <div class="seven__section-card">
-            <div class="seven__section-first-card">
+        <div class="seven__section-cards">
+            <div class="seven__section-card">
                 <h3 class="seven-card-title">Цена</h3>
                 <p class="seven-card-info">Во многих странах при покупке электромобилей предоставляются налоговые
                     льготы. Размер льгот зависит от страны.
                 </p>
             </div>
-            <div class="seven__section-second-card">
+            <div class="seven__section-card">
                 <h3 class="seven-card-title">Обслуживание</h3>
                 <p class="seven-card-info">Благодаря меньшему количеству движущихся механических частей и жидкостей
                     обслуживание и ремонт электромобиля часто обходятся дешевле.</p>
             </div>
-            <div class="seven__section-third-card">
+            <div class="seven__section-card">
                 <h3 class="seven-card-title">Стоимость ежедневного использования</h3>
                 <p class="seven-card-info">Большинство владельцев электромобилей заряжают их дома или на работе. При
                     такой зарядке стоимость километра пробега на электричестве будет значительно меньше, чем на бензине.
@@ -258,20 +258,20 @@
     <section class="nine__section">
         <h2 class="nine__section-title"><span class="black-text">Путь к чистой планете.</span> Электромобили — это лишь
             небольшая часть нашей стратегии.</h2>
-        <img src="./image/page3-image-4.webp" class="nine__section-image">
-        <div class="nine__section-card">
-            <div class="nine__section-first-card">
+        <img src="./image/page3-image-4.webp" class="nine__section-image" id="image10">
+        <div class="nine__section-cards">
+            <div class="nine__section-card">
                 <h3 class="nine-card-title">В 2020</h3>
                 <p class="nine-card-info">Запуск модельного ряда подключаемых гибридов и электромобилей, начиная с
                     первого полностью электрического компактного кроссовера XC40 Recharge.
                 </p>
             </div>
-            <div class="nine__section-second-card">
+            <div class="nine__section-card">
                 <h3 class="nine-card-title">К 2025</h3>
                 <p class="nine-card-info">Мы стремимся к тому, чтобы около 50% продаваемых нами автомобилей были
                     полностью электрическими, а остальные 50% - гибридными.</p>
             </div>
-            <div class="nine__section-third-card">
+            <div class="nine__section-card">
                 <h3 class="nine-card-title">К 2040</h3>
                 <p class="nine-card-info">Наше видение заключается в том, чтобы быть климатически нейтральными по всей
                     нашей производственно-сбытовой цепочке в соответствии с целями Парижского соглашения.
@@ -281,37 +281,43 @@
     </section>
     <section class="ten__section">
         <h2 class="ten__section-title">Что вы хотели бы знать о Volvo Recharge?</h2>
-        <div class="ten__section-content-1">
-            <a class="content-block-link-1">
-                <div class="content-block-1">
-                    <p>Почему Volvo Cars решила перейти на электрические силовые установки?</p>
-                    <span class="arrow-1 open"> &rsaquo;</span>
+        <div class="question">
+            <a class="link">
+                <div class="content-block">
+                    <h4>Почему Volvo Cars решила перейти на электрические силовые установки?</h4>
+                    <div>
+                    <img width="16" height="16" src="https://www.volvocars.com/static/shared/icons/v2/navigation-chevrondown-16.svg#light-primary" role="presentation" alt="" class="arrow">
+                </div>
                 </div>
             </a>
-            <p class="block-text-1 open">Мы занимаемся инновациями в области электрических двигателей с 1970-х годов.
+            <p class="block-text">Мы занимаемся инновациями в области электрических двигателей с 1970-х годов.
                 Для нас это естественный прогресс с точки зрения технологий и четкое заявление о нашем стремлении к
                 устойчивому развитию и сокращению выбросов. Мы стремимся к 2025 году сократить выбросы углекислого газа
                 на 40% на автомобиль по сравнению с 2018 годом. И стать климатически нейтральными к 2040 году.</p>
         </div>
-        <div class="ten__section-content-2">
-            <a class="content-block-link-2">
-                <div class="content-block-2">
-                    <p>Каковы основные преимущества электрического двигателя по сравнению с обычным двигателем
-                        внутреннего сгорания?</p>
-                    <span class="arrow-2 open"> &rsaquo;</span>
-                </div>
+        <div class="question">
+            <a class="link">
+                <div class="content-block">
+                    <h4>Каковы основные преимущества электрического двигателя по сравнению с обычным двигателем
+                        внутреннего сгорания?</h4>
+                        <div>
+                        <img width="16" height="16" src="https://www.volvocars.com/static/shared/icons/v2/navigation-chevrondown-16.svg#light-primary" role="presentation" alt="" class="arrow">
+                    </div>
+                    </div>
             </a>
-            <p class="block-text-2 open">Электрифицированные силовые установки имеют целый ряд преимуществ - от
+            <p class="block-text">Электрифицированные силовые установки имеют целый ряд преимуществ - от
                 сокращения выбросов в атмосферу и низких эксплуатационных расходов до лучшего ускорения.</p>
         </div>
-        <div class="ten__section-content-3">
-            <a class="content-block-link-3">
-                <div class="content-block-3">
-                    <p>В чем разница между мягким гибридом, полным гибридом и подключаемым гибридом?</p>
-                    <span class="arrow-3 open"> &rsaquo;</span>
+        <div class="question">
+            <a class="link">
+                <div class="content-block">
+                    <h4>В чем разница между мягким гибридом, полным гибридом и подключаемым гибридом?</h4>
+                    <div>
+                    <img width="16" height="16" src="https://www.volvocars.com/static/shared/icons/v2/navigation-chevrondown-16.svg#light-primary" role="presentation" alt="" class="arrow">
+                </div>
                 </div>
             </a>
-            <p class="block-text-3 open">Мягкий гибрид нельзя зарядить от кабеля. Электродвигатель в нем помогает
+            <p class="block-text">Мягкий гибрид нельзя зарядить от кабеля. Электродвигатель в нем помогает
                 двигателю внутреннего сгорания. Полный гибрид имеет более мощный электродвигатель и емкий аккумулятор по
                 сравнению с мягким гибридом. Полный гибрид может проезжать небольшие расстояния на полностью
                 электрической тяге. Аккумулятор заряжается с помощью двигателя или посредством рекуперативного
@@ -320,24 +326,26 @@
                 дальность хода, благодаря большему блоку батарей и электродвигателю. Подключаемый гибрид способен
                 удовлетворить ежедневные потребности большинства людей.</p>
         </div>
-        <div class="ten__section-content-4">
-            <a class="content-block-link-4">
-                <div class="content-block-4">
-                    <p>Какие модели Volvo доступны в виде подключаемых гибридов Recharge?</p>
-                    <span class="arrow-4 open"> &rsaquo;</span>
+        <div class=" question">
+            <a class="link">
+                <div class="content-block">
+                    <h4>Какие модели Volvo доступны в виде подключаемых гибридов Recharge?</h4>
+                    <div>
+                    <img width="16" height="16" src="https://www.volvocars.com/static/shared/icons/v2/navigation-chevrondown-16.svg#light-primary" role="presentation" alt="" class="arrow">
+                </div>
                 </div>
             </a>
-            <p class="block-text-4 open">Начиная с 2019 года, все наши модели доступны c гибридными силовыми
+            <p class="block-text">Начиная с 2019 года, все наши модели доступны c гибридными силовыми
                 установками.</p>
         </div>
-        <div class="ten__section-content-5">
-            <a class="content-block-link-5">
-                <div class="content-block-5">
-                    <p>Насколько безопасен электромобиль?</p>
-                    <span class="arrow-5 open"> &rsaquo;</span>
+        <div class=" question">
+            <a class="link">
+                <div class="content-block">
+                    <h4>Насколько безопасен электромобиль?</h4>
+                    <img width="16" height="16" src="https://www.volvocars.com/static/shared/icons/v2/navigation-chevrondown-16.svg#light-primary" role="presentation" alt="" class="arrow">
                 </div>
             </a>
-            <p class="block-text-5 open">Все аккумуляторные электромобили проходят те же испытания, что и бензиновые или
+            <p class="block-text">Все аккумуляторные электромобили проходят те же испытания, что и бензиновые или
                 дизельные автомобили. Европейский тест Euro NCAP давно стал эталоном безопасности автомобилей. С
                 недавних пор испытания стали еще жестче — в частности, появились новые требования к автоматическому
                 торможению. Все автомобили модельного ряда Volvo получили самые высокие оценки по пройденным испытаниям.
