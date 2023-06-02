@@ -19,7 +19,7 @@ const image = document.getElementById('image1');
 function changeImageSrc() {
   const screenSize = window.innerWidth;
 
-  if (screenSize <= 1380) { // меняем src на маленькую картинку
+  if (screenSize <= 1080) { // меняем src на маленькую картинку
     image.setAttribute('src', './image/banner-2.webp');
   } else { // меняем src на большую картинку
     image.setAttribute('src', './image/banner.webp');
