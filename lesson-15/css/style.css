@@ -2,6 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+    background-color: rgb(253, 250, 185);
 }
 
 .background {
@@ -25,7 +26,7 @@ body {
 }
 
 .send:hover {
-    background-color: rgb(242, 237, 139);
+    background-color:rgb(253, 250, 185);
 }
 
 .phone,.name,.send {
