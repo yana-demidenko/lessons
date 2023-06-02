@@ -8,6 +8,11 @@ btnMenu.addEventListener('click', () => {
 x.addEventListener('click', () => {
   menu.classList.toggle('open');
 })
+document.querySelector('.meenu').addEventListener('click', function(event) {
+  event.preventDefault(); // предотвращаем перенаправление на верх страницы
+});
+
+
 
 const image = document.getElementById('image1');
 
