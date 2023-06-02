@@ -178,26 +178,6 @@ header {
     gap: 10px;
 }
 
-.background.open {
-    display: flex;
-    animation: showLeft 2s;
-}
-
-.menu.open {
-    display: flex;
-    animation: showRight 2s;
-}
-
-
-@keyframes showLeft {
-    from {
-        right: 100%;
-    }
-
-    to {
-        right: 0;
-    }
-}
 
 /* ---FIRST SECTION--- */
 .first__section {
