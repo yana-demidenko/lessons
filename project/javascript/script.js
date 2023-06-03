@@ -63,3 +63,21 @@ function changeImage2Src() {
 }
 
 window.addEventListener('resize', changeImage2Src); // отслеживаем изменение размера экрана
+
+
+
+
+
+
+
+
+
+var swiper = new Swiper('.swiper', {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
