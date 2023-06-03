@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <title>project</title>
 </head>
 <header>
@@ -130,56 +131,64 @@
     </section>
     <section class="forth__section">
         <h2 class="forth__section-title">Все модели Recharge</h2>
-        <div class="forth__banner">
-            <div class="forth__section-first-card">
-                <a href="#">
-                    <ul class="card__wrapper">
-                        <li class="card-title">crossover</li>
-                        <li class="card-model">C40 Recharge</li>
-                        <li class="card-info">Полностью электрический (Pure electric)</li>
-                        <li><img src="./image/block4-1.webp" class="image__forth-section"></li>
-                    </ul>
-                </a>
-                <a href="#" class="forth__section-link-first-block link">подробнее &rsaquo;</a>
+    <div class="swiper image-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide forth__section-first-card">
+            <a href="#">
+                <ul class="card__wrapper">
+                    <li class="card-title">crossover</li>
+                    <li class="card-model">C40 Recharge</li>
+                    <li class="card-info">Полностью электрический (Pure electric)</li>
+                    <li><img src="./image/block4-1.webp" class="image__forth-section"></li>
+                </ul>
+            </a>
+            <a href="#" class="forth__section-link-first-block link">подробнее &rsaquo;</a>
             </div>
-            <div class="forth__section-second-card">
-                <a href="#">
-                    <ul>
-                        <li class="card-title">crossover</li>
-                        <li class="card-model">XC90 Recharge</li>
-                        <li class="card-info">Plug-in-hybrid</li>
-                        <li><img src="./image/block4-2.webp" class="image__forth-section"></li>
-                    </ul>
-                </a>
-                <a href="#" class="forth__section-link-second-block link">подробнее &rsaquo;</a>
+          <div class="swiper-slide forth__section-second-card">
+            <a href="#">
+                <ul>
+                    <li class="card-title">crossover</li>
+                    <li class="card-model">XC90 Recharge</li>
+                    <li class="card-info">Plug-in-hybrid</li>
+                    <li><img src="./image/block4-2.webp" class="image__forth-section"></li>
+                </ul>
+            </a>
+            <a href="#" class="forth__section-link-second-block link">подробнее &rsaquo;</a>
             </div>
-            <div class="forth__section-third-card">
-                <a href="#">
-                    <ul>
-                        <li class="card-title">crossover</li>
-                        <li class="card-model">XC60 Recharge</li>
-                        <li class="card-info">Plug-in-hybrid</li>
-                        <li><img src="./image/block4-3.webp" class="image__forth-section"></li>
-                    </ul>
-                </a>
-                <a href="#" class="forth__section-link-third-block link">подробнее &rsaquo;</a>
+          <div class="swiper-slide forth__section-third-card">
+            <a href="#">
+                <ul>
+                    <li class="card-title">crossover</li>
+                    <li class="card-model">XC60 Recharge</li>
+                    <li class="card-info">Plug-in-hybrid</li>
+                    <li><img src="./image/block4-3.webp" class="image__forth-section"></li>
+                </ul>
+            </a>
+            <a href="#" class="forth__section-link-third-block link">подробнее &rsaquo;</a>
             </div>
-            <div class="forth__section-forth-card">
-                <a href="#">
-                    <ul>
-                        <li class="card-title">crossover</li>
-                        <li class="card-model">XC40 Recharge</li>
-                        <li class="card-info">Электрический (Pure electric)</li>
-                        <li><img src="./image/block4-4.webp" class="image__forth-section"></li>
-                    </ul>
-                </a>
-                <a href="#" class="forth__section-link-forth-block link">подробнее &rsaquo;</a>
+            <div class="swiper-slide forth__section-forth-card">
+                 <a href="#">
+                <ul>
+                    <li class="card-title">crossover</li>
+                    <li class="card-model">XC40 Recharge</li>
+                    <li class="card-info">Электрический (Pure electric)</li>
+                    <li><img src="./image/block4-4.webp" class="image__forth-section"></li>
+                </ul>
+            </a>
+            <a href="#" class="forth__section-link-forth-block link">подробнее &rsaquo;</a>
             </div>
-            <div class="forth__section-button">
-                <a href="./page3.html" class="button">recharge &rsaquo;</a>
-                <a href="./page4.html" class="button">другие модели &rsaquo;</a>
-            </div>
+            
         </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="forth__section-button">
+        <a href="./page3.html" class="button">recharge &rsaquo;</a>
+        <a href="./page4.html" class="button">другие модели &rsaquo;</a>
+    </div>  
     </section>
     <section class="fifth__section">
         <h2 class="fifth__section-title">Преимущества Volvo</h2>
@@ -260,6 +269,6 @@
         <li><a href="#" class="footer__menu-item">Конфиденциальность</a></li>
     </ul>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="./javascript/script.js"></script>
-
 </html>
