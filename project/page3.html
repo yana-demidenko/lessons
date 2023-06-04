@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/stylepage3.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <title>project</title>
 </head>
 <header>
@@ -95,7 +96,7 @@
     </section>
     <section class="second__section">
         <div class="player">
-            <video src="./video/recharge-hero-video-21_9_webm.webm" controls id="video"></video>
+            <video src="./video/recharge-hero-video-21_9_webm.webm" autoplay loop  preload="auto" id="video"></video>
         </div>
     </section>
     <section class="section__third">
@@ -192,51 +193,71 @@
     </section>
     <section class="sixth__section">
         <h2 class="sixth__section-title">Линейка Recharge</h2>
-        <div class="sixth__banner">
-            <div class="sixth__section-first-card">
-                <a href="#">
-                    <ul class="card__wrapper">
-                        <li class="card-title hover">crossover</li>
-                        <li class="card-model hover">C40 Recharge</li>
-                        <li class="card-info hover">Полностью электрический (Pure electric)</li>
-                        <li class="scale"><img src="./image/block4-1.webp" class="image__sixth-section-1 scale"></li>
-                    </ul>
-                </a>
-                <a href="#" class="sixth__section-link-first-block link">подробнее &rsaquo;</a>
+        <div class="swiper image-swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide sixth__section-card">
+                    <a href="#">
+                        <ul>
+                            <li class="card-title">crossover</li>
+                            <li class="card-model">C40 Recharge</li>
+                            <li class="card-info">Полностью электрический (Pure electric)</li>
+                            <li>
+                                <div class="imagebox"><img src="./image/block4-1.webp" class="image__sixth-section">
+                                </div>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="sixth__section-link">подробнее &rsaquo;</a>
+                </div>
+                <div class="swiper-slide sixth__section-card">
+                    <a href="#">
+                        <ul>
+                            <li class="card-title">кроссоверы и внедорожники</li>
+                            <li class="card-model">XC90 Recharge</li>
+                            <li class="card-info">Plug-in-hybrid</li>
+                            <li>
+                                <div class="imagebox"><img src="./image/block4-2.webp" class="image__sixth-section">
+                                </div>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="sixth__section-link">подробнее &rsaquo;</a>
+                </div>
+                <div class="swiper-slide sixth__section-card">
+                    <a href="#">
+                        <ul>
+                            <li class="card-title">кроссоверы и внедорожники</li>
+                            <li class="card-model">XC60 Recharge</li>
+                            <li class="card-info">Plug-in-hybrid</li>
+                            <li>
+                                <div class="imagebox"><img src="./image/block4-3.webp" class="image__sixth-section">
+                                </div>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="sixth__section-link">подробнее &rsaquo;</a>
+                </div>
+                <div class="swiper-slide sixth__section-card">
+                    <a href="#">
+                        <ul>
+                            <li class="card-title">кроссоверы и внедорожники</li>
+                            <li class="card-model">XC40 Recharge</li>
+                            <li class="card-info">Электрический (Pure electric)</li>
+                            <li>
+                                <div class="imagebox"><img src="./image/block4-4.webp" class="image__sixth-section">
+                                </div>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="sixth__section-link">подробнее &rsaquo;</a>
+                </div>
             </div>
-            <div class="sixth__section-second-card">
-                <a href="#">
-                    <ul>
-                        <li class="card-title">crossover</li>
-                        <li class="card-model">XC90 Recharge</li>
-                        <li class="card-info">Plug-in-hybrid</li>
-                        <li><img src="./image/block4-2.webp" class="image__sixth-section-2"></li>
-                    </ul>
-                </a>
-                <a href="#" class="sixth__section-link-second-block link">подробнее &rsaquo;</a>
-            </div>
-            <div class="sixth__section-third-card">
-                <a href="#">
-                    <ul>
-                        <li class="card-title">crossover</li>
-                        <li class="card-model">XC60 Recharge</li>
-                        <li class="card-info">Plug-in-hybrid</li>
-                        <li><img src="./image/block4-3.webp" class="image__sixth-section-3"></li>
-                    </ul>
-                </a>
-                <a href="#" class="sixth__section-link-third-block link">подробнее &rsaquo;</a>
-            </div>
-            <div class="sixth__section-forth-card">
-                <a href="#">
-                    <ul>
-                        <li class="card-title">crossover</li>
-                        <li class="card-model">XC40 Recharge</li>
-                        <li class="card-info">Электрический (Pure electric)</li>
-                        <li><img src="./image/block4-4.webp" class="image__sixth-section-4"></li>
-                    </ul>
-                </a>
-                <a href="#" class="sixth__section-link-forth-block link">подробнее &rsaquo;</a>
-            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </section>
     <section class="seven__section">
         <div class="seven__section-title-block">
@@ -381,6 +402,7 @@
         </ul>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="./javascript/scriptpage3.js"></script>
 
 </html>
