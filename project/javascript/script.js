@@ -64,20 +64,31 @@ function changeImage2Src() {
 
 window.addEventListener('resize', changeImage2Src); // отслеживаем изменение размера экрана
 
-
-
-
-
-
-
-
-
 var swiper = new Swiper('.swiper', {
   slidesPerView: 4,
-  spaceBetween: 30,
+  spaceBetween: 5,
+ 
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: { 
+    240: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    550: {
+      slidesPerView: 2,
+      spaceBetween: 5
+    },
+    830: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    1145: {
+      slidesPerView: 4,
+      spaceBetween: 5
+    },
+  }
 });
