@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+    <title>lesson-15</title>
+</head>
+
+<body>
+    <div class="background">
+        <form name="form" id="form" action="#">
+            <label>
+                Ваше имя: <br />
+                <input class="name" id="name" name="name" type="text" placeholder="Введите ваше имя" />
+            </label><br />
+            <div id="nameError" class="error"></div>
+            <label>
+                Ваш номер телефона: <br />
+                <input class="phone" id="phone" name="phone" type="tel" placeholder="Введите ваш номер телефона" />
+            </label> <br />
+            <div id="phoneError" class="error"></div>
+            <label>
+                <input class="accept" id="accept" name="accept" type="checkbox" /> Согласен(-на)
+            </label> <br />
+            <div id="acceptError" class="error"></div>
+            <input class="send" type="submit" name="enter" value="Отправить" />
+        </form>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
